@@ -1,0 +1,89 @@
+{
+ "metric": "cpwer",
+ "provider": "deepgram",
+ "dataset": "internal",
+ "recordings": 7,
+ "failed": [],
+ "errors": 31083,
+ "length": 37784,
+ "error_rate": 0.8226497988566589,
+ "per_recording": {
+  "office_meeting_4": {
+   "errors": 10369,
+   "length": 10886,
+   "insertions": 1203,
+   "deletions": 8872,
+   "substitutions": 294,
+   "error_rate": 0.9525078081940107,
+   "reference_speakers": 5,
+   "missed_speakers": 3,
+   "invented_speakers": 0
+  },
+  "office_meeting_1": {
+   "errors": 1553,
+   "length": 4685,
+   "insertions": 308,
+   "deletions": 895,
+   "substitutions": 350,
+   "error_rate": 0.33148345784418354,
+   "reference_speakers": 4,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "office_meeting_2": {
+   "errors": 1916,
+   "length": 2771,
+   "insertions": 367,
+   "deletions": 1297,
+   "substitutions": 252,
+   "error_rate": 0.6914471309996392,
+   "reference_speakers": 3,
+   "missed_speakers": 2,
+   "invented_speakers": 0
+  },
+  "office_meeting_3": {
+   "errors": 5810,
+   "length": 6018,
+   "insertions": 934,
+   "deletions": 4161,
+   "substitutions": 715,
+   "error_rate": 0.9654370222665337,
+   "reference_speakers": 4,
+   "missed_speakers": 2,
+   "invented_speakers": 0
+  },
+  "high_overlap_crosstalk": {
+   "errors": 3241,
+   "length": 3224,
+   "insertions": 488,
+   "deletions": 2377,
+   "substitutions": 376,
+   "error_rate": 1.005272952853598,
+   "reference_speakers": 4,
+   "missed_speakers": 3,
+   "invented_speakers": 0
+  },
+  "adhoc_technical_discussion": {
+   "errors": 5085,
+   "length": 5376,
+   "insertions": 833,
+   "deletions": 3465,
+   "substitutions": 787,
+   "error_rate": 0.9458705357142857,
+   "reference_speakers": 4,
+   "missed_speakers": 1,
+   "invented_speakers": 0
+  },
+  "open_plan_office": {
+   "errors": 3109,
+   "length": 4824,
+   "insertions": 185,
+   "deletions": 2057,
+   "substitutions": 867,
+   "error_rate": 0.6444859038142621,
+   "reference_speakers": 4,
+   "missed_speakers": 1,
+   "invented_speakers": 0
+  }
+ }
+}

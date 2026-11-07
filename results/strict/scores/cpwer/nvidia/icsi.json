@@ -1,0 +1,45 @@
+{
+ "metric": "cpwer",
+ "provider": "nvidia",
+ "dataset": "icsi",
+ "recordings": 3,
+ "failed": [],
+ "errors": 5759,
+ "length": 30773,
+ "error_rate": 0.18714457478958826,
+ "per_recording": {
+  "Bmr013": {
+   "errors": 596,
+   "length": 9214,
+   "insertions": 118,
+   "deletions": 264,
+   "substitutions": 214,
+   "error_rate": 0.06468417625352724,
+   "reference_speakers": 7,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "Bmr018": {
+   "errors": 1209,
+   "length": 13246,
+   "insertions": 380,
+   "deletions": 400,
+   "substitutions": 429,
+   "error_rate": 0.09127283708289295,
+   "reference_speakers": 7,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "Bro021": {
+   "errors": 3954,
+   "length": 8313,
+   "insertions": 1794,
+   "deletions": 2011,
+   "substitutions": 149,
+   "error_rate": 0.4756405629736557,
+   "reference_speakers": 7,
+   "missed_speakers": 0,
+   "invented_speakers": 6
+  }
+ }
+}

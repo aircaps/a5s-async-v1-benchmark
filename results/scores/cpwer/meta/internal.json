@@ -1,0 +1,89 @@
+{
+ "metric": "cpwer",
+ "provider": "meta",
+ "dataset": "internal",
+ "recordings": 7,
+ "failed": [],
+ "errors": 11655,
+ "length": 37784,
+ "error_rate": 0.3084639000635189,
+ "per_recording": {
+  "office_meeting_4": {
+   "errors": 4300,
+   "length": 10886,
+   "insertions": 173,
+   "deletions": 3589,
+   "substitutions": 538,
+   "error_rate": 0.39500275583318023,
+   "reference_speakers": 5,
+   "missed_speakers": 0,
+   "invented_speakers": 1
+  },
+  "office_meeting_1": {
+   "errors": 783,
+   "length": 4685,
+   "insertions": 67,
+   "deletions": 579,
+   "substitutions": 137,
+   "error_rate": 0.16712913553895412,
+   "reference_speakers": 4,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "office_meeting_2": {
+   "errors": 571,
+   "length": 2771,
+   "insertions": 53,
+   "deletions": 416,
+   "substitutions": 102,
+   "error_rate": 0.20606279321544568,
+   "reference_speakers": 3,
+   "missed_speakers": 0,
+   "invented_speakers": 1
+  },
+  "office_meeting_3": {
+   "errors": 1537,
+   "length": 6018,
+   "insertions": 91,
+   "deletions": 1197,
+   "substitutions": 249,
+   "error_rate": 0.2554004652708541,
+   "reference_speakers": 4,
+   "missed_speakers": 0,
+   "invented_speakers": 1
+  },
+  "high_overlap_crosstalk": {
+   "errors": 1182,
+   "length": 3224,
+   "insertions": 34,
+   "deletions": 967,
+   "substitutions": 181,
+   "error_rate": 0.36662531017369726,
+   "reference_speakers": 4,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "adhoc_technical_discussion": {
+   "errors": 1796,
+   "length": 5376,
+   "insertions": 94,
+   "deletions": 1511,
+   "substitutions": 191,
+   "error_rate": 0.33407738095238093,
+   "reference_speakers": 4,
+   "missed_speakers": 0,
+   "invented_speakers": 1
+  },
+  "open_plan_office": {
+   "errors": 1486,
+   "length": 4824,
+   "insertions": 172,
+   "deletions": 980,
+   "substitutions": 334,
+   "error_rate": 0.3080431177446103,
+   "reference_speakers": 4,
+   "missed_speakers": 0,
+   "invented_speakers": 3
+  }
+ }
+}

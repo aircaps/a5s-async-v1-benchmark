@@ -1,0 +1,45 @@
+{
+ "metric": "cpwer",
+ "provider": "google",
+ "dataset": "icsi",
+ "recordings": 3,
+ "failed": [],
+ "errors": 23581,
+ "length": 30773,
+ "error_rate": 0.7662886296428687,
+ "per_recording": {
+  "Bmr013": {
+   "errors": 6053,
+   "length": 9214,
+   "insertions": 1929,
+   "deletions": 2578,
+   "substitutions": 1546,
+   "error_rate": 0.6569350987627524,
+   "reference_speakers": 7,
+   "missed_speakers": 0,
+   "invented_speakers": 1
+  },
+  "Bmr018": {
+   "errors": 11277,
+   "length": 13246,
+   "insertions": 3335,
+   "deletions": 5029,
+   "substitutions": 2913,
+   "error_rate": 0.8513513513513513,
+   "reference_speakers": 7,
+   "missed_speakers": 0,
+   "invented_speakers": 2
+  },
+  "Bro021": {
+   "errors": 6251,
+   "length": 8313,
+   "insertions": 2233,
+   "deletions": 3356,
+   "substitutions": 662,
+   "error_rate": 0.7519547696379165,
+   "reference_speakers": 7,
+   "missed_speakers": 0,
+   "invented_speakers": 7
+  }
+ }
+}

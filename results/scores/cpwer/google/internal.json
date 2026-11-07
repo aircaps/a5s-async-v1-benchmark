@@ -1,0 +1,89 @@
+{
+ "metric": "cpwer",
+ "provider": "google",
+ "dataset": "internal",
+ "recordings": 7,
+ "failed": [],
+ "errors": 20046,
+ "length": 37784,
+ "error_rate": 0.5305420283717975,
+ "per_recording": {
+  "office_meeting_4": {
+   "errors": 6556,
+   "length": 10886,
+   "insertions": 121,
+   "deletions": 4948,
+   "substitutions": 1487,
+   "error_rate": 0.6022414109865882,
+   "reference_speakers": 5,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "office_meeting_1": {
+   "errors": 958,
+   "length": 4685,
+   "insertions": 90,
+   "deletions": 716,
+   "substitutions": 152,
+   "error_rate": 0.20448239060832443,
+   "reference_speakers": 4,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "office_meeting_2": {
+   "errors": 570,
+   "length": 2771,
+   "insertions": 71,
+   "deletions": 353,
+   "substitutions": 146,
+   "error_rate": 0.20570191266690727,
+   "reference_speakers": 3,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "office_meeting_3": {
+   "errors": 3743,
+   "length": 6018,
+   "insertions": 891,
+   "deletions": 2068,
+   "substitutions": 784,
+   "error_rate": 0.6219674310402127,
+   "reference_speakers": 4,
+   "missed_speakers": 1,
+   "invented_speakers": 0
+  },
+  "high_overlap_crosstalk": {
+   "errors": 1966,
+   "length": 3224,
+   "insertions": 133,
+   "deletions": 1404,
+   "substitutions": 429,
+   "error_rate": 0.6098014888337469,
+   "reference_speakers": 4,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "adhoc_technical_discussion": {
+   "errors": 3662,
+   "length": 5376,
+   "insertions": 603,
+   "deletions": 2203,
+   "substitutions": 856,
+   "error_rate": 0.6811755952380952,
+   "reference_speakers": 4,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "open_plan_office": {
+   "errors": 2591,
+   "length": 4824,
+   "insertions": 149,
+   "deletions": 1494,
+   "substitutions": 948,
+   "error_rate": 0.537106135986733,
+   "reference_speakers": 4,
+   "missed_speakers": 1,
+   "invented_speakers": 0
+  }
+ }
+}

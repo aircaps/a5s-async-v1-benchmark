@@ -1,0 +1,34 @@
+{
+ "metric": "cpwer",
+ "provider": "google",
+ "dataset": "chime6",
+ "recordings": 2,
+ "failed": [],
+ "errors": 61831,
+ "length": 56801,
+ "error_rate": 1.088554778965159,
+ "per_recording": {
+  "S01": {
+   "errors": 33405,
+   "length": 28616,
+   "insertions": 10888,
+   "deletions": 6490,
+   "substitutions": 16027,
+   "error_rate": 1.167353927872519,
+   "reference_speakers": 4,
+   "missed_speakers": 0,
+   "invented_speakers": 7
+  },
+  "S21": {
+   "errors": 28426,
+   "length": 28185,
+   "insertions": 8257,
+   "deletions": 7465,
+   "substitutions": 12704,
+   "error_rate": 1.0085506475075394,
+   "reference_speakers": 4,
+   "missed_speakers": 0,
+   "invented_speakers": 2
+  }
+ }
+}

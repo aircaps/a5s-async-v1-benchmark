@@ -1,0 +1,45 @@
+{
+ "metric": "cpwer",
+ "provider": "aircaps",
+ "dataset": "icsi",
+ "recordings": 3,
+ "failed": [],
+ "errors": 4502,
+ "length": 30773,
+ "error_rate": 0.14629707860787053,
+ "per_recording": {
+  "Bmr013": {
+   "errors": 1314,
+   "length": 9214,
+   "insertions": 117,
+   "deletions": 764,
+   "substitutions": 433,
+   "error_rate": 0.14260907314955504,
+   "reference_speakers": 7,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "Bmr018": {
+   "errors": 1916,
+   "length": 13246,
+   "insertions": 235,
+   "deletions": 1046,
+   "substitutions": 635,
+   "error_rate": 0.1446474407368262,
+   "reference_speakers": 7,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "Bro021": {
+   "errors": 1272,
+   "length": 8313,
+   "insertions": 108,
+   "deletions": 686,
+   "substitutions": 478,
+   "error_rate": 0.1530133525802959,
+   "reference_speakers": 7,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  }
+ }
+}

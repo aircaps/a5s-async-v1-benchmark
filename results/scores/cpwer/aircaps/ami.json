@@ -1,0 +1,188 @@
+{
+ "metric": "cpwer",
+ "provider": "aircaps",
+ "dataset": "ami",
+ "recordings": 16,
+ "failed": [],
+ "errors": 14068,
+ "length": 88844,
+ "error_rate": 0.1583449642069245,
+ "per_recording": {
+  "EN2002a": {
+   "errors": 1616,
+   "length": 7779,
+   "insertions": 202,
+   "deletions": 677,
+   "substitutions": 737,
+   "error_rate": 0.2077387839053863,
+   "reference_speakers": 4,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "EN2002b": {
+   "errors": 1240,
+   "length": 6197,
+   "insertions": 200,
+   "deletions": 468,
+   "substitutions": 572,
+   "error_rate": 0.2000968210424399,
+   "reference_speakers": 4,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "EN2002c": {
+   "errors": 2099,
+   "length": 10932,
+   "insertions": 568,
+   "deletions": 757,
+   "substitutions": 774,
+   "error_rate": 0.1920051225759239,
+   "reference_speakers": 3,
+   "missed_speakers": 0,
+   "invented_speakers": 1
+  },
+  "EN2002d": {
+   "errors": 1611,
+   "length": 8006,
+   "insertions": 221,
+   "deletions": 675,
+   "substitutions": 715,
+   "error_rate": 0.2012240819385461,
+   "reference_speakers": 4,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "ES2004a": {
+   "errors": 642,
+   "length": 2665,
+   "insertions": 171,
+   "deletions": 242,
+   "substitutions": 229,
+   "error_rate": 0.24090056285178235,
+   "reference_speakers": 4,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "ES2004b": {
+   "errors": 795,
+   "length": 6766,
+   "insertions": 217,
+   "deletions": 310,
+   "substitutions": 268,
+   "error_rate": 0.11749926101093704,
+   "reference_speakers": 4,
+   "missed_speakers": 0,
+   "invented_speakers": 1
+  },
+  "ES2004c": {
+   "errors": 745,
+   "length": 7054,
+   "insertions": 155,
+   "deletions": 213,
+   "substitutions": 377,
+   "error_rate": 0.10561383612134959,
+   "reference_speakers": 4,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "ES2004d": {
+   "errors": 905,
+   "length": 6258,
+   "insertions": 144,
+   "deletions": 305,
+   "substitutions": 456,
+   "error_rate": 0.14461489293704058,
+   "reference_speakers": 4,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "IS1009a": {
+   "errors": 314,
+   "length": 1944,
+   "insertions": 97,
+   "deletions": 95,
+   "substitutions": 122,
+   "error_rate": 0.16152263374485595,
+   "reference_speakers": 4,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "IS1009b": {
+   "errors": 493,
+   "length": 5940,
+   "insertions": 108,
+   "deletions": 135,
+   "substitutions": 250,
+   "error_rate": 0.082996632996633,
+   "reference_speakers": 4,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "IS1009c": {
+   "errors": 371,
+   "length": 4205,
+   "insertions": 99,
+   "deletions": 120,
+   "substitutions": 152,
+   "error_rate": 0.08822829964328181,
+   "reference_speakers": 4,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "IS1009d": {
+   "errors": 783,
+   "length": 4530,
+   "insertions": 309,
+   "deletions": 278,
+   "substitutions": 196,
+   "error_rate": 0.1728476821192053,
+   "reference_speakers": 4,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "TS3003a": {
+   "errors": 494,
+   "length": 2502,
+   "insertions": 66,
+   "deletions": 191,
+   "substitutions": 237,
+   "error_rate": 0.19744204636290968,
+   "reference_speakers": 4,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "TS3003b": {
+   "errors": 479,
+   "length": 4605,
+   "insertions": 136,
+   "deletions": 152,
+   "substitutions": 191,
+   "error_rate": 0.10401737242128122,
+   "reference_speakers": 4,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "TS3003c": {
+   "errors": 690,
+   "length": 4283,
+   "insertions": 240,
+   "deletions": 253,
+   "substitutions": 197,
+   "error_rate": 0.16110203128648143,
+   "reference_speakers": 4,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "TS3003d": {
+   "errors": 791,
+   "length": 5178,
+   "insertions": 118,
+   "deletions": 303,
+   "substitutions": 370,
+   "error_rate": 0.15276168404789495,
+   "reference_speakers": 4,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  }
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "metric": "cpwer",
+ "provider": "nvidia",
+ "dataset": "chime6",
+ "recordings": 2,
+ "failed": [],
+ "errors": 67316,
+ "length": 56801,
+ "error_rate": 1.1851199802820374,
+ "per_recording": {
+  "S01": {
+   "errors": 34205,
+   "length": 28616,
+   "insertions": 14574,
+   "deletions": 15515,
+   "substitutions": 4116,
+   "error_rate": 1.1953103159071847,
+   "reference_speakers": 4,
+   "missed_speakers": 0,
+   "invented_speakers": 8
+  },
+  "S21": {
+   "errors": 33111,
+   "length": 28185,
+   "insertions": 11492,
+   "deletions": 14773,
+   "substitutions": 6846,
+   "error_rate": 1.1747738158594998,
+   "reference_speakers": 4,
+   "missed_speakers": 0,
+   "invented_speakers": 10
+  }
+ }
+}

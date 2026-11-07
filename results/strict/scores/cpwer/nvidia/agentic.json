@@ -1,0 +1,56 @@
+{
+ "metric": "cpwer",
+ "provider": "nvidia",
+ "dataset": "agentic",
+ "recordings": 4,
+ "failed": [],
+ "errors": 2124,
+ "length": 15914,
+ "error_rate": 0.1334673872062335,
+ "per_recording": {
+  "conv_33a7d4d9b539": {
+   "errors": 568,
+   "length": 4339,
+   "insertions": 202,
+   "deletions": 144,
+   "substitutions": 222,
+   "error_rate": 0.1309057386494584,
+   "reference_speakers": 3,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "conv_64c1b2cb866f": {
+   "errors": 232,
+   "length": 1525,
+   "insertions": 57,
+   "deletions": 80,
+   "substitutions": 95,
+   "error_rate": 0.1521311475409836,
+   "reference_speakers": 3,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "conv_9f02665b00a1": {
+   "errors": 1234,
+   "length": 9132,
+   "insertions": 374,
+   "deletions": 251,
+   "substitutions": 609,
+   "error_rate": 0.13512921594393343,
+   "reference_speakers": 3,
+   "missed_speakers": 0,
+   "invented_speakers": 1
+  },
+  "conv_a9cb739140c6": {
+   "errors": 90,
+   "length": 918,
+   "insertions": 19,
+   "deletions": 23,
+   "substitutions": 48,
+   "error_rate": 0.09803921568627451,
+   "reference_speakers": 3,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  }
+ }
+}

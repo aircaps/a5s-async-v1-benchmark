@@ -1,0 +1,7 @@
+{
+ "provider": "google",
+ "dataset": "voxpopuli",
+ "recording": "20130117-0900-PLENARY-16-en_20130117-15_10_12_2",
+ "failed_at": "2026-11-02T03:20:37.321+00:00",
+ "error": "HTTPStatusError: Client error '400 Bad Request' for url 'https://generativelanguage.googleapis.com/v1beta/interactions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400 | body: {\"error\":{\"message\":\"The model output could not be generated. This output contains sensitive words that violate Google's [Generative AI Prohibited Use policy](https://policies.google.com/terms/generative-ai/use-policy). Please modify input and try again.\",\"code\":\"safety\"}}"
+}

@@ -1,0 +1,89 @@
+{
+ "metric": "cpwer",
+ "provider": "xai",
+ "dataset": "internal",
+ "recordings": 7,
+ "failed": [],
+ "errors": 19894,
+ "length": 37784,
+ "error_rate": 0.5265191615498623,
+ "per_recording": {
+  "office_meeting_4": {
+   "errors": 6547,
+   "length": 10886,
+   "insertions": 221,
+   "deletions": 4907,
+   "substitutions": 1419,
+   "error_rate": 0.6014146610325188,
+   "reference_speakers": 5,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "office_meeting_1": {
+   "errors": 1580,
+   "length": 4685,
+   "insertions": 95,
+   "deletions": 991,
+   "substitutions": 494,
+   "error_rate": 0.33724653148345785,
+   "reference_speakers": 4,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "office_meeting_2": {
+   "errors": 1715,
+   "length": 2771,
+   "insertions": 14,
+   "deletions": 1544,
+   "substitutions": 157,
+   "error_rate": 0.6189101407434139,
+   "reference_speakers": 3,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "office_meeting_3": {
+   "errors": 3145,
+   "length": 6018,
+   "insertions": 80,
+   "deletions": 2255,
+   "substitutions": 810,
+   "error_rate": 0.5225988700564972,
+   "reference_speakers": 4,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "high_overlap_crosstalk": {
+   "errors": 1704,
+   "length": 3224,
+   "insertions": 71,
+   "deletions": 1263,
+   "substitutions": 370,
+   "error_rate": 0.5285359801488834,
+   "reference_speakers": 4,
+   "missed_speakers": 0,
+   "invented_speakers": 1
+  },
+  "adhoc_technical_discussion": {
+   "errors": 2973,
+   "length": 5376,
+   "insertions": 197,
+   "deletions": 2129,
+   "substitutions": 647,
+   "error_rate": 0.5530133928571429,
+   "reference_speakers": 4,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "open_plan_office": {
+   "errors": 2230,
+   "length": 4824,
+   "insertions": 87,
+   "deletions": 1572,
+   "substitutions": 571,
+   "error_rate": 0.4622719734660033,
+   "reference_speakers": 4,
+   "missed_speakers": 0,
+   "invented_speakers": 1
+  }
+ }
+}

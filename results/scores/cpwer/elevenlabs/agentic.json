@@ -1,0 +1,56 @@
+{
+ "metric": "cpwer",
+ "provider": "elevenlabs",
+ "dataset": "agentic",
+ "recordings": 4,
+ "failed": [],
+ "errors": 2381,
+ "length": 15914,
+ "error_rate": 0.14961668970717606,
+ "per_recording": {
+  "conv_33a7d4d9b539": {
+   "errors": 512,
+   "length": 4339,
+   "insertions": 138,
+   "deletions": 198,
+   "substitutions": 176,
+   "error_rate": 0.11799953906430052,
+   "reference_speakers": 3,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "conv_64c1b2cb866f": {
+   "errors": 180,
+   "length": 1525,
+   "insertions": 62,
+   "deletions": 32,
+   "substitutions": 86,
+   "error_rate": 0.1180327868852459,
+   "reference_speakers": 3,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "conv_9f02665b00a1": {
+   "errors": 1594,
+   "length": 9132,
+   "insertions": 535,
+   "deletions": 725,
+   "substitutions": 334,
+   "error_rate": 0.17455102934734998,
+   "reference_speakers": 3,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "conv_a9cb739140c6": {
+   "errors": 95,
+   "length": 918,
+   "insertions": 22,
+   "deletions": 27,
+   "substitutions": 46,
+   "error_rate": 0.10348583877995643,
+   "reference_speakers": 3,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  }
+ }
+}

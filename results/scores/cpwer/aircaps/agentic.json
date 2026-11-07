@@ -1,0 +1,56 @@
+{
+ "metric": "cpwer",
+ "provider": "aircaps",
+ "dataset": "agentic",
+ "recordings": 4,
+ "failed": [],
+ "errors": 1347,
+ "length": 15914,
+ "error_rate": 0.08464245318587407,
+ "per_recording": {
+  "conv_33a7d4d9b539": {
+   "errors": 389,
+   "length": 4339,
+   "insertions": 104,
+   "deletions": 161,
+   "substitutions": 124,
+   "error_rate": 0.0896519935469002,
+   "reference_speakers": 3,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "conv_64c1b2cb866f": {
+   "errors": 153,
+   "length": 1525,
+   "insertions": 49,
+   "deletions": 41,
+   "substitutions": 63,
+   "error_rate": 0.10032786885245902,
+   "reference_speakers": 3,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "conv_9f02665b00a1": {
+   "errors": 750,
+   "length": 9132,
+   "insertions": 209,
+   "deletions": 244,
+   "substitutions": 297,
+   "error_rate": 0.0821287779237845,
+   "reference_speakers": 3,
+   "missed_speakers": 0,
+   "invented_speakers": 1
+  },
+  "conv_a9cb739140c6": {
+   "errors": 55,
+   "length": 918,
+   "insertions": 12,
+   "deletions": 13,
+   "substitutions": 30,
+   "error_rate": 0.05991285403050109,
+   "reference_speakers": 3,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  }
+ }
+}

@@ -1,0 +1,148 @@
+# Request settings for every provider. The rules are the same for all of them:
+#   - the provider's default settings, plus only: the model, the language, and speaker diarization switched on;
+#   - no speaker counts, no vocabulary or key terms, no prompts (except Nemotron, which needs one; we use
+#     NVIDIA's own benchmark prompts);
+#   - every provider receives the same 16 kHz mono 16-bit WAV, whole. Files longer than a provider's documented
+#     per-request limit (`max_seconds`) are sent as equal parts overlapping by two minutes and joined without the
+#     reference (bench/stitch.py); `bench hyp --strict` scores the parts as separate speakers instead.
+#
+# model:          the model id sent to the API.
+# api_key_env:    environment variable holding the API key.
+# params:         request parameters sent with every file, besides audio, model and language (the language
+#                 parameter is set by the adapter; its name differs per API).
+# max_seconds:    documented per-request audio limit, where it is shorter than our longest recording.
+# concurrency:    requests in flight at once, from the provider's published default paid-tier limit (the speed
+#                 test runs at most this many). Override for your own account in configs/local.yaml.
+# rate_limit:     the provider's published request-rate limit, where it has one: [requests, per seconds].
+# slots:          a provider rule that a long file takes several concurrency slots (ElevenLabs).
+# price_per_hour: list price in USD per audio hour for batch transcription with diarization, as published on
+#                 the date noted; used only for the cost table.
+
+providers:
+  aircaps:
+    label: AirCaps A5S Async v1
+    docs: https://docs.aircaps.com
+    model: a5s-async-v1
+    api_key_env: AIRCAPS_API_KEY
+    params: {}                      # speaker labels are always on; nothing else to set
+    concurrency: 5                  # "5 async jobs processing at once", more are queued (docs, limits)
+    price_per_hour: 0.18            # console list price after the free hours, 2026-11-02
+
+  elevenlabs:
+    label: ElevenLabs Scribe v2
+    docs: https://elevenlabs.io/docs/api-reference/speech-to-text/convert
+    model: scribe_v2
+    api_key_env: ELEVENLABS_API_KEY
+    params:
+      diarize: true
+    concurrency: 12                 # Starter plan (no pay-as-you-go tier)
+    slots: {over_seconds: 480, slots: 4}   # a file over 8 minutes takes up to 4 concurrency slots
+    price_per_hour: 0.22            # elevenlabs.io/pricing/api, 2026-11-01
+
+  assemblyai:
+    label: AssemblyAI Universal-3.5 Pro
+    docs: https://www.assemblyai.com/docs/api-reference/transcripts/submit
+    model: universal-3-5-pro
+    api_key_env: ASSEMBLYAI_API_KEY
+    params:
+      speech_models: [universal-3-5-pro]   # set explicitly: if omitted the API may fall back to another model
+      speaker_labels: true
+    concurrency: 200                # paid accounts
+    price_per_hour: 0.23            # $0.21 + $0.02 speaker diarization, assemblyai.com/pricing, 2026-10-27
+
+  meta:
+    label: Meta Muse Voice Transcribe 1.0
+    docs: https://dev.meta.ai/docs/api-reference/voice/transcribe
+    model: muse-voice-transcribe-1.0
+    api_key_env: META_API_KEY
+    params:
+      mode: DIARIZATION
+      audioEncoding: WAV
+    file_endpoint_max_seconds: 600  # file endpoint: "at most 10 minutes" per request; longer recordings go whole
+                                    # through the realtime endpoint, streamed at real time (see the adapter)
+    max_seconds: 3600               # realtime sessions end at about 1 hour ("Max session duration reached")
+    concurrency: 256                # 256 concurrent streams, shared by file and realtime requests
+    rate_limit: [16000, 3600]       # 16,000 streams per hour
+    price_per_hour: 0.18            # dev.meta.ai/docs/pricing-rate-limits, 2026-11-01
+
+  microsoft:
+    label: Microsoft MAI-Transcribe-2 (preview)
+    docs: https://learn.microsoft.com/azure/ai-services/speech-service/mai-transcribe
+    model: MAI-Transcribe-2
+    api_key_env: AZURE_SPEECH_KEY   # plus AZURE_SPEECH_ENDPOINT, https://<resource>.cognitiveservices.azure.com
+    params:
+      enhancedMode: {enabled: true, model: MAI-Transcribe-2}
+      diarization: {enabled: true}
+    max_seconds: 7199               # "shorter than 2 hours" per request (REST reference, `audio`)
+    concurrency: 100                # no concurrency limit is published
+    rate_limit: [600, 60]           # 600 requests/min per resource
+    price_per_hour: 0.10            # introductory until 2026-12-31, no later price published, azure.microsoft.com/pricing
+
+  xai:
+    label: xAI Grok Voice Transcribe 2.0
+    docs: https://docs.x.ai/developers/model-capabilities/audio/speech-to-text
+    model: grok-voice-transcribe-2.0
+    api_key_env: XAI_API_KEY
+    params:
+      diarize: true
+    concurrency: 100                # tier 0: 100 concurrent sessions
+    rate_limit: [10, 1]             # tier 0 and 1: 10 requests/s
+    price_per_hour: 0.10            # diarization included, docs.x.ai/developers/pricing, 2026-11-01
+
+  google:
+    label: Google Gemini 3.5 Transcribe
+    docs: https://ai.google.dev/gemini-api/docs/transcribe
+    model: gemini-3.5-transcribe
+    api_key_env: GEMINI_API_KEY
+    params:
+      mode: {type: verbatim, diarization_mode: speaker}   # verbatim is the default mode
+    max_seconds: 1800               # 30 minutes per request when diarization is on
+    concurrency: 100                # no concurrency limit is published
+    price_per_hour: 0.31            # token-billed; Google's own per-minute estimate, ai.google.dev/pricing, 2026-11-02
+
+  deepgram:
+    label: Deepgram Nova-3
+    docs: https://developers.deepgram.com/reference/speech-to-text/listen-pre-recorded
+    model: nova-3
+    api_key_env: DEEPGRAM_API_KEY
+    params:
+      diarize_model: latest           # documented replacement for the deprecated diarize=true
+    concurrency: 50                 # pay as you go: up to 50 concurrent pre-recorded requests
+    price_per_hour: 0.258           # $0.0043/min monolingual, diarization included, deepgram.com/pricing, 2026-11-02
+
+  nvidia:
+    label: NVIDIA Nemotron 3.5 Transcribe (self-hosted, 1x H100, BF16)
+    docs: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B
+    model: nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B
+    api_key_env: NEMOTRON_API_KEY   # optional; the server URL goes in NEMOTRON_BASE_URL
+    params:                         # model card, "Send a Request"
+      temperature: 0
+      top_p: 1.0
+      seed: 0
+      chat_template_kwargs: {enable_thinking: false}
+      skip_special_tokens: false
+      spaces_between_special_tokens: false
+    max_seconds: 3600               # 1 hour per request
+    concurrency: 16                 # per server; see serving/nemotron/README.md
+    price_per_hour: null            # open weights, self-hosted; no NVIDIA-hosted price
+    # NVIDIA's benchmark prompts, verbatim from the model card ("Exact ASR Benchmark Prompts").
+    prompts:
+      multi_speaker: >-
+        Transcribe this audio. Include all spoken words and verbal fillers. Write numbers as spoken. Use no
+        punctuation and no capitalization. Start every speaker turn with a speaker tag such as <spk:0>, <spk:1>,
+        <spk:2>, etc.; assign one stable tag per speaker and keep speaker identities consistent. Output only the
+        speaker-tagged transcript.
+      multi_speaker_zh: >-
+        Transcribe this audio. Include all spoken words and verbal fillers. Write numbers as spoken. No
+        punctuation or capitalization. Put a distinct <spk:N> tag before every speaker turn, assigning a
+        different N to every speaker.
+      single_speaker: >-
+        Audio transcription. Language: as spoken. Wording: verbatim, including fillers and repetitions.
+        Formatting: punctuation and capitalization. Output: transcript only.
+    # Which prompt NVIDIA uses for each kind of recording; datasets not listed use multi_speaker.
+    prompt_by_dataset:
+      aishell4: multi_speaker_zh
+      alimeeting: multi_speaker_zh
+      openasr_earnings22: single_speaker
+      openasr_librispeech_clean: single_speaker
+      voxpopuli: single_speaker

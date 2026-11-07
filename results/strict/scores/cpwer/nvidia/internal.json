@@ -1,0 +1,89 @@
+{
+ "metric": "cpwer",
+ "provider": "nvidia",
+ "dataset": "internal",
+ "recordings": 7,
+ "failed": [],
+ "errors": 12770,
+ "length": 37784,
+ "error_rate": 0.33797374550074105,
+ "per_recording": {
+  "office_meeting_4": {
+   "errors": 4059,
+   "length": 10886,
+   "insertions": 641,
+   "deletions": 981,
+   "substitutions": 2437,
+   "error_rate": 0.3728642292853206,
+   "reference_speakers": 5,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "office_meeting_1": {
+   "errors": 672,
+   "length": 4685,
+   "insertions": 96,
+   "deletions": 240,
+   "substitutions": 336,
+   "error_rate": 0.14343649946638207,
+   "reference_speakers": 4,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "office_meeting_2": {
+   "errors": 530,
+   "length": 2771,
+   "insertions": 108,
+   "deletions": 151,
+   "substitutions": 271,
+   "error_rate": 0.1912666907253699,
+   "reference_speakers": 3,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "office_meeting_3": {
+   "errors": 1574,
+   "length": 6018,
+   "insertions": 240,
+   "deletions": 504,
+   "substitutions": 830,
+   "error_rate": 0.26154868727151875,
+   "reference_speakers": 4,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "high_overlap_crosstalk": {
+   "errors": 1220,
+   "length": 3224,
+   "insertions": 155,
+   "deletions": 294,
+   "substitutions": 771,
+   "error_rate": 0.3784119106699752,
+   "reference_speakers": 4,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "adhoc_technical_discussion": {
+   "errors": 1606,
+   "length": 5376,
+   "insertions": 270,
+   "deletions": 413,
+   "substitutions": 923,
+   "error_rate": 0.29873511904761907,
+   "reference_speakers": 4,
+   "missed_speakers": 0,
+   "invented_speakers": 0
+  },
+  "open_plan_office": {
+   "errors": 3109,
+   "length": 4824,
+   "insertions": 1200,
+   "deletions": 1239,
+   "substitutions": 670,
+   "error_rate": 0.6444859038142621,
+   "reference_speakers": 4,
+   "missed_speakers": 0,
+   "invented_speakers": 3
+  }
+ }
+}

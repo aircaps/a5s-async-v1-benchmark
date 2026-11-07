@@ -1,0 +1,254 @@
+{
+ "aircaps|15-30%": {
+  "errors": 20041,
+  "length": 137409,
+  "recordings": 83,
+  "missed_speakers": 1,
+  "invented_speakers": 13
+ },
+ "aircaps|30-50%": {
+  "errors": 43983,
+  "length": 156771,
+  "recordings": 61,
+  "missed_speakers": 0,
+  "invented_speakers": 12
+ },
+ "aircaps|<15%": {
+  "errors": 6685,
+  "length": 57685,
+  "recordings": 20,
+  "missed_speakers": 0,
+  "invented_speakers": 2
+ },
+ "aircaps|50%+": {
+  "errors": 6510,
+  "length": 28850,
+  "recordings": 14,
+  "missed_speakers": 0,
+  "invented_speakers": 3
+ },
+ "assemblyai|15-30%": {
+  "errors": 40130,
+  "length": 137409,
+  "recordings": 83,
+  "missed_speakers": 1,
+  "invented_speakers": 9
+ },
+ "assemblyai|30-50%": {
+  "errors": 67389,
+  "length": 156771,
+  "recordings": 61,
+  "missed_speakers": 2,
+  "invented_speakers": 7
+ },
+ "assemblyai|<15%": {
+  "errors": 10822,
+  "length": 57685,
+  "recordings": 20,
+  "missed_speakers": 1,
+  "invented_speakers": 1
+ },
+ "assemblyai|50%+": {
+  "errors": 13891,
+  "length": 28850,
+  "recordings": 14,
+  "missed_speakers": 0,
+  "invented_speakers": 1
+ },
+ "deepgram|15-30%": {
+  "errors": 72809,
+  "length": 137409,
+  "recordings": 83,
+  "missed_speakers": 64,
+  "invented_speakers": 13
+ },
+ "deepgram|30-50%": {
+  "errors": 114836,
+  "length": 156771,
+  "recordings": 61,
+  "missed_speakers": 68,
+  "invented_speakers": 5
+ },
+ "deepgram|<15%": {
+  "errors": 28348,
+  "length": 57685,
+  "recordings": 20,
+  "missed_speakers": 19,
+  "invented_speakers": 4
+ },
+ "deepgram|50%+": {
+  "errors": 21465,
+  "length": 28850,
+  "recordings": 14,
+  "missed_speakers": 20,
+  "invented_speakers": 1
+ },
+ "elevenlabs|15-30%": {
+  "errors": 38116,
+  "length": 137409,
+  "recordings": 83,
+  "missed_speakers": 23,
+  "invented_speakers": 4
+ },
+ "elevenlabs|30-50%": {
+  "errors": 80071,
+  "length": 156771,
+  "recordings": 61,
+  "missed_speakers": 51,
+  "invented_speakers": 22
+ },
+ "elevenlabs|<15%": {
+  "errors": 14833,
+  "length": 57685,
+  "recordings": 20,
+  "missed_speakers": 6,
+  "invented_speakers": 5
+ },
+ "elevenlabs|50%+": {
+  "errors": 14521,
+  "length": 28850,
+  "recordings": 14,
+  "missed_speakers": 14,
+  "invented_speakers": 0
+ },
+ "google|15-30%": {
+  "errors": 65904,
+  "length": 137409,
+  "recordings": 83,
+  "missed_speakers": 23,
+  "invented_speakers": 7
+ },
+ "google|30-50%": {
+  "errors": 107841,
+  "length": 156771,
+  "recordings": 61,
+  "missed_speakers": 45,
+  "invented_speakers": 12
+ },
+ "google|<15%": {
+  "errors": 19409,
+  "length": 57685,
+  "recordings": 20,
+  "missed_speakers": 4,
+  "invented_speakers": 13
+ },
+ "google|50%+": {
+  "errors": 16522,
+  "length": 28850,
+  "recordings": 14,
+  "missed_speakers": 12,
+  "invented_speakers": 1
+ },
+ "meta|15-30%": {
+  "errors": 39864,
+  "length": 137409,
+  "recordings": 83,
+  "missed_speakers": 1,
+  "invented_speakers": 45
+ },
+ "meta|30-50%": {
+  "errors": 68526,
+  "length": 156771,
+  "recordings": 61,
+  "missed_speakers": 5,
+  "invented_speakers": 49
+ },
+ "meta|<15%": {
+  "errors": 14013,
+  "length": 57685,
+  "recordings": 20,
+  "missed_speakers": 0,
+  "invented_speakers": 18
+ },
+ "meta|50%+": {
+  "errors": 15354,
+  "length": 28850,
+  "recordings": 14,
+  "missed_speakers": 1,
+  "invented_speakers": 10
+ },
+ "microsoft|15-30%": {
+  "errors": 40702,
+  "length": 137409,
+  "recordings": 83,
+  "missed_speakers": 14,
+  "invented_speakers": 1
+ },
+ "microsoft|30-50%": {
+  "errors": 77013,
+  "length": 156771,
+  "recordings": 61,
+  "missed_speakers": 34,
+  "invented_speakers": 11
+ },
+ "microsoft|<15%": {
+  "errors": 27492,
+  "length": 57685,
+  "recordings": 20,
+  "missed_speakers": 13,
+  "invented_speakers": 6
+ },
+ "microsoft|50%+": {
+  "errors": 13610,
+  "length": 28850,
+  "recordings": 14,
+  "missed_speakers": 8,
+  "invented_speakers": 0
+ },
+ "nvidia|15-30%": {
+  "errors": 26691,
+  "length": 137409,
+  "recordings": 83,
+  "missed_speakers": 1,
+  "invented_speakers": 10
+ },
+ "nvidia|30-50%": {
+  "errors": 56578,
+  "length": 156771,
+  "recordings": 61,
+  "missed_speakers": 2,
+  "invented_speakers": 11
+ },
+ "nvidia|<15%": {
+  "errors": 9717,
+  "length": 57685,
+  "recordings": 20,
+  "missed_speakers": 4,
+  "invented_speakers": 1
+ },
+ "nvidia|50%+": {
+  "errors": 10447,
+  "length": 28850,
+  "recordings": 14,
+  "missed_speakers": 0,
+  "invented_speakers": 2
+ },
+ "xai|15-30%": {
+  "errors": 57886,
+  "length": 137409,
+  "recordings": 83,
+  "missed_speakers": 1,
+  "invented_speakers": 8
+ },
+ "xai|30-50%": {
+  "errors": 97350,
+  "length": 156771,
+  "recordings": 61,
+  "missed_speakers": 4,
+  "invented_speakers": 8
+ },
+ "xai|<15%": {
+  "errors": 18316,
+  "length": 57685,
+  "recordings": 20,
+  "missed_speakers": 1,
+  "invented_speakers": 0
+ },
+ "xai|50%+": {
+  "errors": 19252,
+  "length": 28850,
+  "recordings": 14,
+  "missed_speakers": 0,
+  "invented_speakers": 1
+ }
+}

@@ -1,0 +1,27 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.DS_Store
+._*
+.env
+data/
+logs*/
+configs/local.yaml
+# Sets whose audio and transcripts may not be redistributed: only their scores are published.
+#   internal: AirCaps' own recordings; agentic: licensed from the Agentic Data Company;
+#   dai_en: David AI's data use agreement allows evaluation, not redistribution.
+results/raw/*/internal/
+results/raw/*/agentic/
+results/raw/*/dai_en/
+results/errors/*/internal/
+results/errors/*/agentic/
+results/errors/*/dai_en/
+results/hyp/*/internal.*
+results/hyp/*/agentic.*
+results/hyp/*/dai_en.*
+results/strict/raw/*/internal/
+results/strict/raw/*/agentic/
+results/strict/raw/*/dai_en/
+results/strict/hyp/*/internal.*
+results/strict/hyp/*/agentic.*
+results/strict/hyp/*/dai_en.*
