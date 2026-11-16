@@ -3,6 +3,8 @@
 The benchmark behind AirCaps' A5S Async v1 report: an open, reproducible comparison of speaker-attributed
 transcription APIs (who said what), scored with **cpWER** (concatenated minimum-permutation word error rate).
 
+**Model:** [A5S Async v1](https://aircaps.ai/models/a5s-async) · **Report:** [A5S Async v1 research note](https://aircaps.ai/research/a5s-async-v1-the-worlds-most-accurate-speech-recognition-model-for-speaker-attributed-transcription) · **API:** [AirCaps AI docs](https://aircaps.ai/docs/quickstart)
+
 Everything needed to check or redo the numbers is here: the adapter for every provider, the exact request
 settings, the dataset recipes, every raw API response, the hypotheses and the scores. Audio and reference
 transcripts are not redistributed; the [dataset manifests](manifests/) say where to
